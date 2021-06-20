@@ -1,0 +1,134 @@
+<html>
+<head>
+     <title>Harry Potter Quiz</title>
+	 <style>
+body {
+  background-color: khaki;
+}
+h1, h2 {
+  font-family: "Cursive", Lucida Handwriting;
+} 
+</style>
+</head>
+<body>
+<h1>Q1. WHO WAS HARRY'S FIRST BEST FRIEND HE EVER MADE?</h1> 
+<h2><input type="radio" name="questtion1">Fred Weasley<br>
+<input type="radio" name="questtion1">Hermione Granger<br>
+<input type="radio" name="questtion1" id="correct1">Ron Weasley<br>
+<input type="radio" name="questtion1">George Weasley<br></h2>
+<h2 id="demo" style="display:none">Hint: A Weasley</h2>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Hint</button>
+
+<br>
+<h1>Q2. WHAT IS NARCISSA MALFOY'S MAIDEN NAME?</h1>
+<h2><input type="radio" name="questtion2">Pettigrew<br>
+<input type="radio" name="questtion2" id="correct2">Black<br>
+<input type="radio" name="questtion2">Riddle<br>
+<input type="radio" name="questtion2">Potter<br></h2>
+<h2 id="demo2" style="display:none">Hint: She is Sirius Black's Paternal cousin</h2>
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Hint</button>
+
+<br>
+<h1>Q3. WHAT IS RITA SKEETER'S ANIMAGUS FORM?</h1>
+<h2><input type="radio" name="questtion3" id="correct3">Beetle<br>
+<input type="radio" name="questtion3">Rat<br>
+<input type="radio" name="questtion3">Werewolf<br>
+<input type="radio" name="questtion3">Stag<br></h2>
+<h2 id="demo3" style="display:none">Hint: A small creature that can go everywhere</h2>
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">Hint</button>
+<br>
+<h1>Q4. WHAT IS HERMIONE'S MIDDLE NAME?<br></h1>
+<h2><input type="radio" name="questtion4">Jane<br>
+<input type="radio" name="questtion4">Racheal<br>
+<input type="radio" name="questtion4">Lily<br>
+<input type="radio" name="questtion4" id="correct4">Jean<br></h2>
+<h2 id="demo4" style="display:none">Hint: Starts with a J</h2>
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">Hint</button>
+<br>
+<h1>Q5. WHAT WAS THE NAME OF THE BLACK FAMILY'S HOUSE ELF<br></h1>
+<h2><input type="radio" name="questtion5">Dobby<br>
+<input type="radio" name="questtion5">Winky<br>
+<input type="radio" name="questtion5">Hockey<br>
+<input type="radio" name="questtion5" id="correct5">Kreacher<br></h2>
+<br>
+<h1>Q6. WHICH CREATURE HAS TEARS THAT CAN CURE WOUNDS AND DEEP CUTS? <br></h1>
+<h2><input type="radio" name="questtion6">Boggart<br>
+<input type="radio" name="questtion6" id="correct6">Phoenix<br>
+<input type="radio" name="questtion6">Pixie<br>
+<input type="radio" name="questtion6">Mandrake<br></h2>
+<br>
+<h1>Q7. WHAT POSITION DOES HARRY PLAY IN THE GRYFFINDOR QUIDDITCH TEAM? <br></h1>
+<h2><input type="radio" name="questtion7" id="correct7">Seeker<br>
+<input type="radio" name="questtion7">Chaser<br>
+<input type="radio" name="questtion7">Keeper<br>
+<input type="radio" name="questtion7">Beater<br></h2>
+<br>
+<h1>Q8. WHICH SPELL DID HARRY USE TO KILL VOLDEMORT? <br></h1>
+<h2><input type="radio" name="questtion8">Accio<br>
+<input type="radio" name="questtion8">Expecto Patronum<br>
+<input type="radio" name="questtion8">Avada Kedavra<br>
+<input type="radio" name="questtion8" id="correct8">Expelliarmus<br></h2>
+<br>
+<h1>Q9. WHAT DOES THE SPELL "SERPENSORTIA" CONJURE? <br></h1>
+<h2><input type="radio" name="questtion9" id="correct9">Snake<br>
+<input type="radio" name="questtion9">Crocodile<br>
+<input type="radio" name="questtion9">Dinosaur<br>
+<input type="radio" name="questtion9">Expelliarmus<br></h2>
+<br>
+<h1>Q10. THE 'FELIFORS' SPELL TURNS A CAT INTO A ___________ <br></h1>
+<h2><input type="radio" name="questtion10" id="correct10">Cauldron<br>
+<input type="radio" name="questtion10">Fish<br>
+<input type="radio" name="questtion10">Bucket<br>
+<input type="radio" name="questtion10">Glass<br></h2>
+<br>
+<input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+<a href="clock.html">Clock
+<script type="text/javascript">
+    function result() {
+
+        var score=0;
+		if (document.getElementById('correct1').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct2').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct3').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct4').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct5').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct6').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct7').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct8').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct9').checked)
+		{
+		   score++;
+		}
+		if (document.getElementById('correct10').checked)
+		{
+		   score++;
+		}
+		
+        document.write("Your score is:" +score);
+        }
+</script>
+</html> 
